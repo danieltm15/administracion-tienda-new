@@ -4,53 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InicioLatienda</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-        .center {
-            text-align: center;
-        }
-        body {
-    background-color: lightblue;
-        }
-    </style>
+	<link rel="stylesheet" href="../static/styles/styles.css">
+    <title>Login</title>
+	
 </head>
 <body>
 
-    {% with messages = get_flashed_messages() %}
-        {% if messages  %}
-           {% for message in messages  %}
-                <div class="alert alert-success">{{messages}}</div>
-            {% endfor  %}
-        {% endif %}
-    {% endwith %}
+    <header> 
+		<h1 class="titulo1">LA TIENDA</h1>
+	</header>
+	<hr>
 
-
-    <h1 class="center">La tienda</h1>
-</br>
-</br>
-</br>
-    <h3 class="center">Restablesca su contraseña</h3>
-    <form action="{{url_for('get_vencido')}}"method="post">
-    <div class="center">
-        <input type="email" name="email" placeholder="ingrese su email">
-    </div>
-    <div class="center">
-        <input type="password" name="newPassword" placeholder="nuevo password">
-    </div>
-    
-    <div class="center">
-        <button>Actualizar</button>
-    </div>
-    </form>
-
-</br>
-
-<div class="center">
-    <a href="/login">Regresar</a>
-
-
-</div>
-    
+	<main>
+		<div class="contenedor_est">
+			<h2>Restablesca su contraseña</h2>
+			
+			<form class="form_est" action="{{url_for('get_vencido')}}"method="post">
+				<label  for="email">Correo electrónico:</label>
+				<input type="email" name="email" id="email">
+				<label  for="newPassword">Contraseña:</label>
+				<input type="password" name="newPassword" id="newpassword">
+				<button>Actualizar</button>
+			</form>
+			
+			<div class="Links">
+				<a href="/login">Regresar</a>
+			</div>
+		</div>
+	</main>    
+	
+	<footer>
+		<p>Fondo de pantalla tomado de <a href="https://www.freepik.es/vectores/elementos-diseno">https://www.freepik.es/</a></p>
+	</footer>
 </body>
 </html>

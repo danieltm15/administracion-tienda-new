@@ -17,14 +17,12 @@
 		h1 {
 			color: #3d2149;
 			font-size: 50px;
-		}
-
-		
-		.titulo1 {
 			width: auto;
 			text-align: center;
 			margin: 10px;
-		}		
+		}
+
+	
 
 		.contenedor_Inicio {
 			border: Solid black 1px;
@@ -44,9 +42,10 @@
 			font-size: 30px;
 			margin: 0;
 			color: #96AA36;
+			text-align: center;
 		}
 		
-		.longInLinks {
+		.Links {
             display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -57,7 +56,7 @@
 			color: #96AA36;
 		}
 		
-		.form_inicio {
+		.form_inicio,  .form_est{
 			width: 100%;
 			display: flex;
 			flex-direction: column;
@@ -65,7 +64,7 @@
 			justify-content: center;
 		}
 			
-		.form_inicio input {
+		.form_inicio input,  .form_est input {
 			width: 100%;
 			box-sizing: border-box;
 			height: 30px;
@@ -77,15 +76,15 @@
 			color: #3696AA;
 		}
 		
-		.form_inicio input:focus {
+		.form_inicio input:focus, .form_est input:focus {
 			background-color: rgba(62, 33, 75, 70%);
 		}
 		
-		.form_inicio label {
+		.form_inicio label, .form_est label {
 			color: #96AA36;
 		}
 		
-		.form_inicio > button {
+		.form_inicio > button, .form_est > button {
 			width: 200px;
 			height: 30px;
 			margin: 15px auto 0 auto;
@@ -147,10 +146,25 @@
 		  color: #859730;
 		}
 		
-		main {
-			height: 100%;
+		
+		.contenedor_est {
+			border: Solid black 1px;
+			padding: 20px 10px;
+			width: 300px;
+			height: 350px;
+			margin: 50px auto; 
+			border-radius: 10%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			background-color: rgba(62, 33, 75,60%);
 		}
 
+		.contenedor_est a{
+			font-size: 13px;
+			color: #96AA36;
+		}
 
 
 

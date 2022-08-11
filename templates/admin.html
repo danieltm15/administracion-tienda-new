@@ -4,42 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InicioLatienda</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-        .center {
-            text-align: center;
-        }
-        body {
-    background-color: lightblue;
-        }
-    </style>
+	<link rel="stylesheet" href="../static/styles/styles.css">
+    <title>Login</title>
+	
 </head>
 <body>
-    <h1 class="center">La tienda</h1>
-</br>
-</br>
-</br>
-    <h3 class="center">Administrador</h3>
-    <p class="center">El id es: admin, la contraseña es: 0000</p>
-    <form action="{{url_for('verify_admin')}}"method="post">
-    <div class="center">
-        <input type="text" name="adminId" placeholder="Id">
-    </div>
-    <div class="center">
-        <input type="password" name="password" placeholder="Your password">
-    </div>
-    <div class="center">
-        <button>Submit</button>
-    </div>
-    </form> 
-</br>
 
-    <div class="center">
-        <a href="/login">Regresar</a>
+    <header> 
+		<h1 class="titulo1">LA TIENDA</h1>
+	</header>
+	<hr>
 
 
-    </div>
-    
+	<main>
+		<div class="contenedor_est">
+			<h2>Administrador</h2>
+			<p style="font-size: 11px">(El id es: admin, la contraseña es: 0000)</p>
+			<form class="form_est" action="{{url_for('verify_admin')}}"method="post">
+				<label  for="adminId">Id:</label>
+				<input type="text" name="adminId" id="adminId">
+				<label  for="password">Contraseña:</label>
+				<input type="password" name="password" id="password">
+				<button>Actualizar</button>
+			</form>
+			
+			<div class="Links">
+				<a href="/login">Regresar</a>
+			</div>
+		</div>
+	</main> 	
+	
+	<footer>
+		<p>Fondo de pantalla tomado de <a href="https://www.freepik.es/vectores/elementos-diseno">https://www.freepik.es/</a></p>
+	</footer>
 </body>
 </html>
