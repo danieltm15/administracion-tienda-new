@@ -1,7 +1,7 @@
         body {
 			font-family: Helvetica;
 			padding: 20px 20px 0 20px;
-			background-image: url(./img/background.svg	);
+			background-image: url("../img/background.svg");
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
