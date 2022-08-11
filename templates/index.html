@@ -18,7 +18,8 @@
 	<main>
 		<div class="contenedor_Inicio">
 			<h2>Iniciar sesión</h2>
-			<form class="form_inicio">
+			
+			<form class="form_inicio" action="{{url_for('verify_user')}}" method="POST">
 				<label  for="email">Correo electrónico:</label>
 				<input type="email" name="email" id="email">
 				<label  for="password">Contraseña:</label>
