@@ -3,7 +3,7 @@ from flask import Flask,request,render_template,redirect,url_for,flash
 from flask_sqlalchemy import SQLAlchemy
 from datetime import date, datetime
 
-app = Flask(__name__)
+app = Flask(__name__,  static_url_path='/static')
 PORT=5000
 DEBUG=False
 # 'postgresql://<usuario>:<contraseña>@<direccion de la db>:<puerto>/<nombre de la db>
