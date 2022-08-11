@@ -40,7 +40,7 @@
 			background-color: rgba(62, 33, 75,60%);
 		}
 		
-		.contenedor_Inicio h2{
+		h2{
 			font-size: 30px;
 			margin: 0;
 			color: #96AA36;
@@ -109,6 +109,60 @@
 			color: #96AA36;
 			text-decoration: none;
 		}
+
+		.contenedor_Home {
+			border: Solid black 1px;
+			padding: 20px 10px;
+			width: 300px;
+			height: 350px;
+			margin: 50px auto; 
+			border-radius: 10%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			background-color: rgba(62, 33, 75,60%);
+		}
+
+		.contenedor_Home div {
+			height: 100%;
+			display:flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.contenedor_Home div a {
+			margin-bottom: 10px;
+			text-decoration: none;
+			color: #96AA36;
+			font-weight: 600;
+		}
+		
+		.contenedor_Home div a:visited {
+		  color: #96AA36;
+		}
+		
+		.contenedor_Home div a:hover {
+		  color: #859730;
+		}
+		
+		main {
+			height: 100%;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         .navegacion{

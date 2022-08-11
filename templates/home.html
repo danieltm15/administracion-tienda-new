@@ -4,43 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-        .center {
-            text-align: center;
-            text-size-adjust: 12;
-        }
-        body {
-    background-color: lightblue;
-        }
-    </style>
+	<link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+    <title>Home</title>
+	
 </head>
 <body>
-    <div>
-        
-        <div class="center">
-            <h1>Inicio</h1>
-        </br>
-        </br>
-            <a href="/resproducto">Registrar un producto</a>
-            <br>
-            <a href="/inventario">Ir a inventario</a>
-            <br>
-            <a href="/registrarGastos">Registrar gastos</a>
-            <br>
-            <a href="/gastos">Ver mis gastos</a>
-            <br>
-            <a href="/ventas">Registrar ventas</a>
-            <br>
-            <a href="/facturas">Ver facturas</a>
-            <br>
-            <a href="/login">Salir</a>
-           
-
-        </div>
-        
-    </div>    
+ 
     
+	<header> 
+		<h1 class="titulo1">LA TIENDA</h1>
+	</header>
+	<hr>
+	
+	<main>
+		<div class="contenedor_Home">
+			<h2>Iniciar sesión</h2>
+
+			<div>
+				<a href="/resproducto">Registrar un producto</a>
+				<a href="/inventario">Ir a inventario</a>
+				<a href="/registrarGastos">Registrar gastos</a>
+				<a href="/gastos">Ver mis gastos</a>
+				<a href="/ventas">Registrar ventas</a>
+				<a href="/facturas">Ver facturas</a>
+				<a href="/login">Salir</a>
+			</div>
+		</div>		
+	</main>
+	
+	<footer>
+		<p>Fondo de pantalla tomado de <a href="https://www.freepik.es/vectores/elementos-diseno">https://www.freepik.es/</a></p>
+	</footer>
+    
+	
 </body>
 </html>
