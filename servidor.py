@@ -227,6 +227,7 @@ def del_fact():
     id_factura=requestdata["id_factura"]
     facturadb=Factura.query.filter_by(id_factura=id_factura).first()
     db.session.delete(facturadb)
+    db.session.commit()
     return redirect("elimfact")
 
 
