@@ -88,7 +88,13 @@ def get_ventas():
 @app.route('/inventario')
 def inventario():
     consulta = db.session.query(Product).all()
-    return render_template("inventario.html",datos = consulta)    
+    return render_template("inventario.html",datos = consulta)   
+
+
+@app.route('/elifac')
+def elifac():
+    consulta = db.session.query(Product).all()
+    return render_template("elifac.html",datos = consulta)      
 
 @app.route('/resproducto')
 def resproducto():
@@ -206,6 +212,8 @@ def registrar_venta():
     print(id_facturar)
     return redirect("facturar")
 
+
+
 @app.route('/deleteproduct', methods=['POST'])
 def del_product():
     requestdata=request.form
@@ -214,6 +222,17 @@ def del_product():
     db.session.delete(productdb)
     db.session.commit()
     return redirect("inventario")
+ 
+
+ 
+ @app.route('/deletefact', methods=['POST'])
+def del_fact():
+    requestdata=request.form
+    id_factura=requestdata["id_product"]
+    productdb=Factura.query.filter_by(id_factura=id_factura).first()
+    db.session.delete(productdb)
+    db.session.commit()
+    return redirect("elifac")
 
 
 
