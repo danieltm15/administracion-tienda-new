@@ -287,15 +287,31 @@ def get_facturas():
     factura = db.session.query(Factura).all()
     return render_template("facturas.html", factura=factura)
 
-  
-
-
 
 @app.route('/facturar', methods=['GET'])
 def get_facturar():
 
+  
+    return render_template("facturar.html")
 
-    return render_template("facturar.html", factura=factura, ventas=ventas, producto=producto)
+
+
+"""
+@app.route('/facturar', methods=['GET'])
+def get_facturar():
+
+    factura = Factura.query.filter_by(id_factura=id_facturar).first()
+
+    if factura==None:
+        print(id_facturar)
+        return "Error: Hay un error en el id de la factura!"
+    else:
+
+        ventas = Sold.query.filter_by(id_factura=factura.id_factura).first()
+        producto = Product.query.filter_by(id=ventas.id_product).first()
+        
+        return render_template("facturar.html", factura=factura, ventas=ventas, producto=producto)
+"""
 
 
 if __name__ == "__main__":
