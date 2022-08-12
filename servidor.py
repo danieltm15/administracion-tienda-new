@@ -57,7 +57,7 @@ def get_home():
     return render_template("home.html")
     
 @app.route('/elimfact')
-def get_elimfact():
+def elimfact():
     consulta = db.session.query(Factura).all()
     return render_template("elimfact.html",factura = consulta)
     
