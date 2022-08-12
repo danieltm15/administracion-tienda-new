@@ -223,11 +223,7 @@ def del_product():
     
 @app.route('/deletefact', methods=['POST'])
 def del_fact():
-    requestdata=request.form
-    id_factura=requestdata["id_factura"]
-    facturadb=Factura.query.filter_by(id_factura=id_factura).first()
-    db.session.delete(facturadb)
-    db.session.commit()
+
     return redirect("elimfact")
 
 
