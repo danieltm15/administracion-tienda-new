@@ -45,6 +45,13 @@
 			text-align: center;
 		}
 		
+		h3{
+			font-size: 20px;
+			margin: 30px 0 10px 0;
+			color: #96AA36;
+			text-align: center;
+		}
+		
 		.Links {
             display: flex;
 			flex-direction: column;
@@ -196,10 +203,37 @@
 		
 		#contenedor_gasto {
 			height: 100%;
+		} 
+		
+		#contenedor_homeadmin {
+			height: fit-content%;
+			width: fit-content;
 		}
+		
+		#form_homeadmin {
+			width: 300px;
+			padding-top: 0;
+		}
+		
 		
 		#contenedor_ventas {
 			height: 330px;
+		}
+		
+		table {
+			border-collapse: collapse;
+			margin: 10px 4px;
+		}
+		
+		th {
+			font-size: 16px;
+			color: #96AA36;
+			text-align: center;
+		}
+		
+		td {
+			border-bottom: 1px solid;
+			color: #3696AA;
 		}
 
 
