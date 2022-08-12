@@ -289,10 +289,11 @@ def get_facturas():
 
 
 @app.route('/facturar', methods=['GET'])
-def get_facturar():
+def facturar():
 
   
     return render_template("facturar.html")
+
 
 
 
