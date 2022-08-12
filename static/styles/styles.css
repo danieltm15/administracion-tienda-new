@@ -232,8 +232,9 @@
 		}
 		
 		td {
-			border-bottom: 1px solid;
+			border-bottom: 1px solid #3d2149;
 			color: #3696AA;
+			text-align: center;
 		}
 
 
