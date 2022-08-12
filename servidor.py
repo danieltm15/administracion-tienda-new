@@ -224,8 +224,8 @@ def del_product():
 @app.route('/deletefact', methods=['POST'])
 def del_fact():
     requestdata=request.form
-    id=requestdata["id_product"]
-    productdb=Product.query.filter_by(id=id).first()
+    id_factura=requestdata["id_product"]
+    productdb=Product.query.filter_by(id_factura=id_factura).first()
     db.session.delete(productdb)
     db.session.commit()
     return redirect("elimfact")
