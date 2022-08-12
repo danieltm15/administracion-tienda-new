@@ -210,7 +210,7 @@ def registrar_venta():
     global id_facturar
     id_facturar=venta.id_factura
     print(id_facturar)
-    return redirect("facturar")
+    return redirect("home")
 
 @app.route('/deleteproduct', methods=['POST'])
 def del_product():
@@ -286,15 +286,6 @@ def get_facturas():
 
     factura = db.session.query(Factura).all()
     return render_template("facturas.html", factura=factura)
-
-
-@app.route('/facturar', methods=['GET'])
-def facturar():
-
-  
-    return render_template("facturar.html")
-
-
 
 
 """
