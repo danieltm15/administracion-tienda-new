@@ -55,6 +55,11 @@ def get_login():
 @app.route('/home')
 def get_home():
     return render_template("home.html")
+    
+@app.route('/elimfact')
+def get_elimfact():
+    return render_template("elimfact.html")
+    
 #paginas de login a singup
 @app.route('/signup')
 def get_signup():
