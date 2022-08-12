@@ -220,6 +220,7 @@
 			height: 330px;
 		}
 		
+
 		table {
 			border-collapse: collapse;
 			margin: 10px 4px;
@@ -247,73 +248,5 @@
 
 
 
-
-
-
-        .navegacion{
-            width: 800px;
-            margin: 30px auto;
-            background: none;
-            
-        }
-
-        .navegacion ul{
-            list-style: none;
-        }
-
-        .menu > li{
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Menu horizontal */
-        .menu > li > a {
-            display: block;
-            padding: 15px 20px;
-            color: #353535;
-            font-family: 'Open sans';
-            text-decoration: none;
-        }
-
-
-        .submenu{
-            position: absolute;
-            background-color:rgb(190, 223, 235);    
-            /* El width es el ancho de la caja */
-            width: 100%; 
-            display: none; 
-        }
-
-        .submenu li a{
-            display: block;
-            /* El padding son los margenes internos de una caja */
-            padding: 15px;
-            color: rgb(22, 56, 68);
-            font-family: 'Open sans';
-            text-decoration: none;
-            
-        }
-
-        .menu li:hover .submenu{
-            display: block;
-        }
-
-        /* Texto sobre la imagen */
-        .contenedor{
-        position: relative;
-        display: inline-block;
-        text-align: center;
-        }
-        .texto-encima{
-            position: absolute;
-            top: 0px;
-            left: 10px;
-        }
-        .centrado{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
 
 
