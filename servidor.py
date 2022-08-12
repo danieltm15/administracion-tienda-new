@@ -58,7 +58,8 @@ def get_home():
     
 @app.route('/elimfact')
 def get_elimfact():
-    return render_template("elimfact.html")
+    consulta = db.session.query(Factura).all()
+    return render_template("elimfact.html",factura = consulta)
     
 #paginas de login a singup
 @app.route('/signup')
