@@ -220,6 +220,15 @@ def del_product():
     db.session.delete(productdb)
     db.session.commit()
     return redirect("inventario")
+    
+@app.route('/deletefact', methods=['POST'])
+def del_fact():
+    requestdata=request.form
+    id=requestdata["id_product"]
+    productdb=Product.query.filter_by(id=id).first()
+    db.session.delete(productdb)
+    db.session.commit()
+    return redirect("elimfact")
 
 
 
